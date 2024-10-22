@@ -1,0 +1,25 @@
+{
+  "name": "project-bun",
+  "version": "0.0.1",
+  "description": "Project Bun is an experiment exploring a minimal Bun app that uses core Bun APIs and as few dependencies as possible.",
+  "author": "Aaron Ortbals <aaron.ortbals@gmail.com> (https://github.com/aortbals)",
+  "license": "MIT",
+  "module": "src/index.tsx",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch src/index.tsx",
+    "migrate": "bun scripts/migrate.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "react": "^19.0.0-rc-1460d67c-20241003",
+    "react-dom": "^19.0.0-rc-1460d67c-20241003"
+  }
+}
