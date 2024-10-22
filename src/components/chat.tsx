@@ -148,7 +148,7 @@ export function Chat() {
             </form>
           </div>
           <div className="mt-2 flex justify-between items-center px-2">
-            <p className="text-sm text-gray-500">
+            <div className="text-sm text-gray-500">
               {isConnected ? (
                 <>
                   <span className="inline-flex items-center gap-x-1.5 rounded-md text-xs font-medium text-green-700">
@@ -181,7 +181,7 @@ export function Chat() {
                   Disconnected
                 </span>
               )}
-            </p>
+            </div>
             <button
               onClick={handleLogout}
               className="text-xs text-gray-500 hover:text-gray-700"

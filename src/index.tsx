@@ -132,7 +132,7 @@ const server = Bun.serve({
               type: "join",
               message: `${ws.data.username} connected`,
               username: "server",
-              userCount: server.subscriberCount(GLOBAL_CHAT_CHANNEL) - 1,
+              userCount: server.subscriberCount(GLOBAL_CHAT_CHANNEL),
             })
           );
         } else if (data.type === "message") {
@@ -158,7 +158,7 @@ const server = Bun.serve({
             type: "leave",
             message: `${ws.data.username} disconnected`,
             username: ws.data.username,
-            userCount: server.subscriberCount(GLOBAL_CHAT_CHANNEL) - 1,
+            userCount: server.subscriberCount(GLOBAL_CHAT_CHANNEL),
           })
         );
       }
