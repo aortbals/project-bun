@@ -12,8 +12,8 @@ It includes:
   - a [websocket server](https://bun.sh/docs/api/websockets)
   - serving a client-side bundle using [`Bun.build`](https://bun.sh/docs/bundler) that hydrates the server-rendered React
 - A basic example using a counter to increment and decrement a counter stored in global state
-- A basic example using server-rendered react and to create tasks via traditional form posts and store them in a SQLite database using Bun's [native SQLite driver](https://bun.sh/docs/api/sqlite)
-- A basic chat app that hydrates React on the client, connects to the [Bun websocket server](https://bun.sh/docs/api/websockets) and and allows a user to send messages
+- A basic example using server-rendered react that lets you create tasks via traditional form posts and store them in a SQLite database using Bun's [native SQLite driver](https://bun.sh/docs/api/sqlite)
+- A basic chat app that hydrates React on the client, connects to the [Bun websocket server](https://bun.sh/docs/api/websockets) and allows a user to send messages
 - Watchs and reloads the dev server using [Bun watch](https://bun.sh/docs/runtime/hot)
 
 Bun has a lot of interesting APIs that are surprisingly capable and fun to build with. The only dependencies used are React and React DOM.
